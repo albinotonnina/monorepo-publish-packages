@@ -1,4 +1,4 @@
 # Hello
 
-### [at-monorepo-test-package1](packages/package1) -  v1.7.0
+### [at-monorepo-test-package1](packages/package1) -  v1.8.0
 
