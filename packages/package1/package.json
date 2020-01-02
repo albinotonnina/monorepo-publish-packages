@@ -4,9 +4,8 @@
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn make:readme && yarn make:dist",
-    "make:readme": "mmarkdown",
-    "make:dist": "node ./index.js"
+    "build": "node ./lib/makeCss.js",
+    "version": "mmarkdown"
   },
   "devDependencies": {
     "mmarkdown": "^1.0.0"
