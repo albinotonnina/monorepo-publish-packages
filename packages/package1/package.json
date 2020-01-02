@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn make:readme && yarn make:dist",
     "make:readme": "mmarkdown",
-    "make:dist": "node ./src/index.js"
+    "make:dist": "node ./index.js"
   },
   "devDependencies": {
     "mmarkdown": "^1.0.0"
@@ -16,5 +16,6 @@
     "out": "./readme.md",
     "scripts": "./readme/index.js",
     "backup": false
-  }
+  },
+  "gitHead": "7f96f8e8b3b38dec5c75273a37372881340c03d9"
 }
