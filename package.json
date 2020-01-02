@@ -4,6 +4,7 @@
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
+    "packages:publish": "lerna publish from-git",
     "packages:version": "lerna version --yes",
     "version": "mmarkdown && git add .",
     "build": "lerna run build",
