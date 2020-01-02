@@ -1,0 +1,65 @@
+0 silly argv { _: [ 'version' ],
+0 silly argv   yes: true,
+0 silly argv   y: true,
+0 silly argv   lernaVersion: '3.19.0',
+0 silly argv   '$0':
+0 silly argv    '/Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/.bin/lerna' }
+1 notice cli v3.19.0
+2 verbose rootPath /Users/albinotonnina/Documents/Code/monorepo-publish-test
+3 info versioning independent
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 2
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "at-monorepo-test-package1@0.6.0-2-gbabf12f" => {"lastTagName":"at-monorepo-test-package1@0.6.0","lastVersion":"0.6.0","refCount":"2","sha":"babf12f","isDirty":false}
+14 info Looking for changed packages since at-monorepo-test-package1@0.6.0
+15 info ignoring diff in paths matching [ '*.md' ]
+16 silly checking diff packages/package1
+17 silly found diff in packages/package1/index.js
+18 verbose filtered diff [ 'packages/package1/index.js' ]
+19 verbose updated at-monorepo-test-package1
+20 verbose git-describe undefined => "at-monorepo-test-package1@0.6.0-2-gbabf12f"
+21 silly git-describe parsed => {"lastTagName":"at-monorepo-test-package1@0.6.0","lastVersion":"0.6.0","refCount":"2","sha":"babf12f","isDirty":false}
+22 info auto-confirmed
+23 info execute Skipping releases
+24 silly lifecycle No script for "preversion" in "at-monorepo-test", continuing
+25 silly lifecycle No script for "preversion" in "at-monorepo-test-package1", continuing
+26 silly lifecycle No script for "version" in "at-monorepo-test-package1", continuing
+27 silly lifecycle "version" starting in "at-monorepo-test"
+28 info lifecycle at-monorepo-test@0.0.1~version: at-monorepo-test@0.0.1
+29 warn lifecycle The node binary used for scripts is /var/folders/xz/rxm7wwhs0wg68g7jz4yxy4j00000gn/T/yarn--1577968332458-0.6769151136089735/node but npm is using /usr/local/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+30 verbose lifecycle at-monorepo-test@0.0.1~version: unsafe-perm in lifecycle true
+31 verbose lifecycle at-monorepo-test@0.0.1~version: PATH: /Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/npm-lifecycle/node-gyp-bin:/Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/.bin:/var/folders/xz/rxm7wwhs0wg68g7jz4yxy4j00000gn/T/yarn--1577968332458-0.6769151136089735:/Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/.bin:/Users/albinotonnina/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+32 verbose lifecycle at-monorepo-test@0.0.1~version: CWD: /Users/albinotonnina/Documents/Code/monorepo-publish-test
+33 silly lifecycle at-monorepo-test@0.0.1~version: Args: [ '-c', 'mmarkdown && git add .' ]
+34 silly lifecycle at-monorepo-test@0.0.1~version: Returned: code: 0  signal: null
+35 silly lifecycle "version" finished in "at-monorepo-test"
+36 silly gitAdd [ '/Users/albinotonnina/Documents/Code/monorepo-publish-test/packages/package1/package.json' ]
+37 silly gitCommit chore(release): version
+37 silly gitCommit
+37 silly gitCommit  - at-monorepo-test-package1@0.7.0
+38 verbose git [ 'commit',
+38 verbose git   '-F',
+38 verbose git   '/private/var/folders/xz/rxm7wwhs0wg68g7jz4yxy4j00000gn/T/8187c6d2-35a7-45dc-bb20-db9c4dbe5f09/lerna-commit.txt' ]
+39 silly gitTag at-monorepo-test-package1@0.7.0
+40 verbose git [ 'tag',
+40 verbose git   'at-monorepo-test-package1@0.7.0',
+40 verbose git   '-m',
+40 verbose git   'at-monorepo-test-package1@0.7.0' ]
+41 silly lifecycle No script for "postversion" in "at-monorepo-test-package1", continuing
+42 silly lifecycle No script for "postversion" in "at-monorepo-test", continuing
+43 info git Pushing tags...
+44 silly gitPush origin master
+45 error Error: Command failed: git push --follow-tags --no-verify origin master
+45 error To https://github.com/albinotonnina/monorepo-publish-test.git
+45 error  ! [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/nodejs.yml` without `workflow` scope)
+45 error  ! [remote rejected] at-monorepo-test-package1@0.7.0 -> at-monorepo-test-package1@0.7.0 (refusing to allow an OAuth App to create or update workflow `.github/workflows/nodejs.yml` without `workflow` scope)
+45 error error: failed to push some refs to 'https://github.com/albinotonnina/monorepo-publish-test.git'
+45 error
+45 error     at makeError (/Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/execa/index.js:174:9)
+45 error     at Promise.all.then.arr (/Users/albinotonnina/Documents/Code/monorepo-publish-test/node_modules/execa/index.js:278:16)
