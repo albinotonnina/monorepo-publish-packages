@@ -1,0 +1,20 @@
+{
+  "name": "at-monorepo-test-package1",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn make:readme && yarn make:dist",
+    "make:readme": "mmarkdown",
+    "make:dist": "node ./src/index.js"
+  },
+  "devDependencies": {
+    "mmarkdown": "^1.0.0"
+  },
+  "mmarkdown": {
+    "src": "./readme/readme.md",
+    "out": "./readme.md",
+    "scripts": "./readme/index.js",
+    "backup": false
+  }
+}
