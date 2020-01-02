@@ -4,11 +4,10 @@
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
-    "packages:publish": "lerna publish from-package --yes",
-    "packages:version": "lerna version --yes",
+    "ci:publish": "lerna publish from-package --yes",
+    "bump": "lerna version --yes",
     "version": "mmarkdown && git add .",
-    "build": "lerna run build",
-    "prepublishOnly": "yarn build"
+    "build": "lerna run build"
   },
   "devDependencies": {
     "lerna": "^3.18.5",
